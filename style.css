@@ -33,7 +33,7 @@ header{
     z-index: 100;
 }
 header a{
-    margin-right: 40px ;
+    margin-right: 35px ;
 
 }
 
@@ -73,7 +73,7 @@ letter-spacing: 10px;
 .carousel .list .item .content .title,
 .carousel .list .item .content .topic{
 font-weight: bold;
-font-size: 6vw;
+font-size: 4em;
 line-height: 1.3em;
 }
 .carousel .list .item .content .topic{
