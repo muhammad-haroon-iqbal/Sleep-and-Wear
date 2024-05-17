@@ -148,18 +148,18 @@ line-height: 1.3em;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #eee4;
+    background-color: rgba(238, 238, 238, 0.589);
     border: none;
     font-family: monospace;
-    color: #fff;
+    color: #211010;
     font-weight: bold;
     font-size: large;
     transition: 0.5s;
     z-index: 100;
 }
 .arrows button:hover{
-    background-color: #eee;
-    color: #555;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .carousel .list .item:nth-child(1){
