@@ -156,6 +156,7 @@ line-height: 1.3em;
     font-size: large;
     transition: 0.5s;
     z-index: 100;
+    
 }
 .arrows button:hover{
     background-color: #000000;
