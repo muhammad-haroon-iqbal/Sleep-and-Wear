@@ -16,19 +16,19 @@ body{
 /* *********Header********* */
 nav a{
     text-decoration: none;
-    color: #001279;
+    color: #003058;
     font-size: 1.2vw;
     font-weight: bold;
-    /* text-shadow:1px 4px 4px rgba(0, 0, 0, 1); */
+    text-shadow:1px 2px 1px #F9A505;
     transition:all 0.5s ease;
 }
 nav a:hover{
-    color: #bcab3d;
-    /* text-shadow:1px 3px 0px rgba(210, 96, 96, 1); */
+    color: #F9A505;
+    text-shadow:1px 3px 0px #003058;
 }
 nav a.active{
-    color: #d8c22f;
-    /* text-shadow:1px 3px 0px rgba(210, 96, 96, 1); */
+    color: #F9A505;
+    text-shadow:1px 3px 0px #003058;
 }
 header{
     /* width: 1140px;
@@ -149,17 +149,29 @@ line-height: 1.3em;
     margin-top: 20px;
 }
 .carousel .list .item .content button{
-    border: none;
     background-color: #eee;
     letter-spacing: 3px;
     font-family: Poppins;
     font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    transition: all 0.5s ease;
+}
+.carousel .list .item .content button:hover{
+    color: #eee;
+    background-color: #000000;
 }
 .carousel .list .item .content button:nth-child(2){
     background-color: transparent;
     color: #eee;
     border: 1px solid #eee;
+    transition: all 0.5s ease;
 
+}
+.carousel .list .item .content button:nth-child(2):hover{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 
