@@ -1,40 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     font-family: Poppins;
-    background: #000;
+    /* background: #000; */
     color: #eee;
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     
 }
-
-/* *********Header********* */
-a{
-    text-decoration: none;
-    color: #c56702;
-    font-size: 20px;
-    font-weight: bold;
-    text-shadow:1px 4px 4px rgba(0, 0, 0, 1);
-    transition: 0.5s;
+:root{
+    --bg-color:#222327;
+    --text-color:#fff;
+    --main-color:#29fd53;
 }
-a:hover{
-    color: #f1683a;
-    text-shadow:1px 3px 0px rgba(210, 96, 96, 1);
+/* *********Header********* */
+nav a{
+    text-decoration: none;
+    color: #001279;
+    font-size: 1.2vw;
+    font-weight: bold;
+    /* text-shadow:1px 4px 4px rgba(0, 0, 0, 1); */
+    transition:all 0.5s ease;
+}
+nav a:hover{
+    color: #bcab3d;
+    /* text-shadow:1px 3px 0px rgba(210, 96, 96, 1); */
+}
+nav a.active{
+    color: #d8c22f;
+    /* text-shadow:1px 3px 0px rgba(210, 96, 96, 1); */
 }
 header{
-    width: 1140px;
-    max-width: 80%;
+    /* width: 1140px;
+    max-width: 90%; */
+    width: 100%;
     margin: auto;
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     z-index: 100;
+    /* padding: 28px; */
+    
 }
 header a{
-    margin-right: 35px ;
+    margin-right: 55px;
 
+}
+header a img{
+    width: 100%;
+    max-width: 8vw;
+    margin-left: 35px;
+    align-items: center;
+
+}
+#menu-icon{
+    font-size: 35px;
+    color: #001279;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+@media  screen and (max-width:768px){
+    #menu-icon{
+        display: block;
+    }
+    nav {
+        position: absolute;
+        top: 80%;
+        right: -100%;
+        width: 270px;
+        height: 50vh;
+        background-color: #364cca;
+        /* color: #bcab3d; */
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        border-radius: 10px;
+        transition: all 0.50s ease;
+        z-index: 9999999;
+        /* padding: 30x; */
+    
+    }
+    nav a{
+        display: block;
+        margin: 21px 0;
+        padding: 0 55px;
+        transition: all 0.50s ease;
+        font-size: 4.5vw;
+    }
+    nav a:hover{
+        color: #bcab3d;
+        transform: translateY(5px);
+    }
+    nav.open{
+        right: 2%;
+    }
 }
 
 /*******Carousel************/

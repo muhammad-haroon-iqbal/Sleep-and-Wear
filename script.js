@@ -1,3 +1,11 @@
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x');
+    navbar.classList.toggle('open');
+}
+
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 let carouselDom = document.querySelector('.carousel');
@@ -11,7 +19,7 @@ prevDom.onclick = function () {
     showSlider('prev');
 }
 
-let timeRunning = 3000;
+let timeRunning = 300;
 let timeAutoNext = 7000;
 let runTimeOut;
 let runAutoRun = setTimeout(() => {
