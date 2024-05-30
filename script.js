@@ -19,8 +19,8 @@ prevDom.onclick = function () {
     showSlider('prev');
 }
 
-let timeRunning = 300;
-let timeAutoNext = 7000;
+let timeRunning = 2000;
+let timeAutoNext = 6000;
 let runTimeOut;
 let runAutoRun = setTimeout(() => {
     nextDom.click();

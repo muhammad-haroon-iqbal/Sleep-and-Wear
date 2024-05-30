@@ -6,8 +6,13 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    overflow: hidden;    
 }
+
+html{
+    overflow: hidden;
+}
+
 :root{
     --bg-color:#222327;
     --text-color:#fff;
@@ -50,7 +55,7 @@ header a{
 }
 header a img{
     width: 100%;
-    max-width: 140px;
+    max-width: 170px;
     margin-left: 35px;
     align-items: center;
 
@@ -70,6 +75,7 @@ header a img{
         position: absolute;
         top: 80%;
         right: -100%;
+        overflow: hidden;
         width: 270px;
         height: 50vh;
         background-color: #969a9ecb;
